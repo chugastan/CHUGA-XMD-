@@ -7,7 +7,7 @@ zokou({ nomCom: "test", reaction: "✅", nomFichier: __filename }, async (dest, 
     let d = '                                                                           𝑯𝒆𝒂𝒍𝒕𝒉 𝒔𝒕𝒂𝒕𝒖𝒔✨';
     let varmess = z + d;
     var img = 'https://files.catbox.moe/ety154.jpg';
-    await zk.sendMessage(dest, { video: { url: mp4 }, caption: varmess });
+    await zk.sendMessage(dest, { image: { url: img }, caption: varmess });
     //console.log("montest")
 });
 console.log("mon test");
