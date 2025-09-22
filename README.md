@@ -10,7 +10,7 @@
 **1. First step**
 
 <p align="left">
-<a href='https://github.com/chugastan/CHUGA-XMD-/fork' target="_blank"><img alt='Fork Repo' src='https://img.shields.io/badge/-Fork Repo-blue?style=for-the-badge&logo=github&logoColor=white'/< width=115 height=28/p></a>
+<a href='https://github.com/chugastan/CHUGA-XMD-/fork' target="_blank"><img alt='Fork Repo' src='https://img.shields.io/badge/-Fork Repo-blue?style=for-the-badge&logo=github&logoColor=white'/< width=115 height=40/p></a>
 
 
 <summary>🔥⚕ DEPLOY BOT ON 🔥</summary>
